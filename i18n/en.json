@@ -1,0 +1,10 @@
+{
+  "tagline": "Connect with friends and the world around you.",
+  "email": "Email",
+  "password": "Password",
+  "login": "Log In",
+  "forgotPassword": "Forgot Password?",
+  "createAccount": "Create New Account",
+  "invalidCredentials": "Invalid email or password.",
+  "noUserFound": "No user found."
+}
