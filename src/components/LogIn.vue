@@ -3,28 +3,26 @@
     class="min-h-screen bg-gray-100 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8"
   >
     <div class="absolute top-4 right-4 flex space-x-2">
-      <button
+      <Button
+        :label="'English'"
         @click="setLocale('en')"
         :class="[
-          'px-3 py-1 rounded text-sm font-medium transition',
+          'px-3 py-1 text-sm font-medium transition',
           locale === 'en'
-            ? 'bg-blue-600 text-white'
+            ? 'bg-blue-100 text-white'
             : 'bg-gray-200 text-gray-800 hover:bg-gray-300',
         ]"
-      >
-        English
-      </button>
-      <button
+      />
+      <Button
+        :label="'Français'"
         @click="setLocale('fr')"
         :class="[
-          'px-3 py-1 rounded text-sm font-medium transition',
+          'px-3 py-1 text-sm font-medium transition',
           locale === 'fr'
-            ? 'bg-blue-600 text-white'
+            ? 'bg-blue-100 text-white'
             : 'bg-gray-200 text-gray-800 hover:bg-gray-300',
         ]"
-      >
-        Français
-      </button>
+      />
     </div>
 
     <div
@@ -41,9 +39,16 @@
         <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
           <InputText :label="t('email')" name="email" />
           <InputPassword type="password" :label="t('password')" name="password" />
-          <Button type="submit" :label="t('login')" data-testid="login-button" class="w-full" />
+
+          <Button
+            type="submit"
+            :label="t('login')"
+            data-testid="login-button"
+            class="w-full bg-blue-600 hover:bg-blue-700"
+          />
 
           <router-link
+            data-testid="forgot-password-link"
             to="/forgot-password"
             class="block text-center text-blue-600 mt-4 text-sm hover:underline"
           >
@@ -52,12 +57,11 @@
 
           <hr class="my-4" />
 
-          <button
+          <Button
             type="button"
-            class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded transition"
-          >
-            {{ t('createAccount') }}
-          </button>
+            :label="t('createAccount')"
+            class="w-full bg-green-600 hover:bg-green-700"
+          />
         </div>
       </form>
     </div>

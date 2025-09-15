@@ -5,3 +5,4 @@ export const useI18n = vi.fn(() => {
     t: vi.fn((key) => key),
   };
 });
+  

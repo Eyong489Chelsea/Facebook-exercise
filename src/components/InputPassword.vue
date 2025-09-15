@@ -16,7 +16,7 @@ const onChange = (event: Event) => {
   handleChange(event, false)
 }
 const onBlur = (event: Event) => {
-  handleBlur(event, true)
+  handleBlur(event, true) 
   emit('blur')
 }
 
