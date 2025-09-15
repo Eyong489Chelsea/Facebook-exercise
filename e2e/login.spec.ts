@@ -8,7 +8,7 @@ const login = async (page: Page) => {
 }
 
 test.describe('Login Page', () => {
-  test('should display correctly the login page', async ({ page }) => {
+  test('should display successfully', async ({ page }) => {
     await page.goto('http://localhost:5173')
     await expect(page.getByText('Log In')).toBeVisible()
   })
@@ -25,3 +25,4 @@ test.describe('Login Page', () => {
     await expect(page.getByTestId('welcome')).toBeVisible()
   })
 })
+

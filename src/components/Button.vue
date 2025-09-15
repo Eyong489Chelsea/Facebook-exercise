@@ -1,8 +1,5 @@
 <template>
-  <button
-    data-testid="login-button"
-    class="w-full bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 rounded transition"
-  >
+  <button data-testid="login-button" class="w-full text-white font-bold py-2 rounded transition">
     {{ label }}
   </button>
 </template>

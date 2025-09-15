@@ -9,7 +9,7 @@
         :class="[
           'px-3 py-1 text-sm font-medium transition',
           locale === 'en'
-            ? 'bg-blue-100 text-white'
+            ? 'bg-blue-600 text-white'
             : 'bg-gray-200 text-gray-800 hover:bg-gray-300',
         ]"
       />
@@ -19,7 +19,7 @@
         :class="[
           'px-3 py-1 text-sm font-medium transition',
           locale === 'fr'
-            ? 'bg-blue-100 text-white'
+            ? 'bg-blue-600 text-white'
             : 'bg-gray-200 text-gray-800 hover:bg-gray-300',
         ]"
       />

@@ -3,7 +3,6 @@
     class="bg-white p-4 rounded shadow-md w-full max-w-sm h-full mx-auto"
     data-testid="reset-form"
   >
-    <!-- i18n applied here -->
     <h2 class="text-xl font-bold mb-4 text-center text-black">
       {{ $t('resetPassword.title') }}
     </h2>
