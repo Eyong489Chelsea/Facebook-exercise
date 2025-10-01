@@ -4,12 +4,12 @@
     data-testid="welcome"
   >
     <h1 class="text-4xl font-bold text-blue-600 mb-4">
-      {{ $t('home.title') }}
+      {{ $t('tagline') }}
     </h1>
 
     <div class="p-4 bg-white rounded-2xl shadow w-80 text-center">
       <p class="text-gray-600">
-        {{ $t('home.welcomeMessage') }}
+        {{ $t('welcomeMessage') }}
       </p>
     </div>
   </div>

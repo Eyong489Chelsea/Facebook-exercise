@@ -1,4 +1,10 @@
 {
+  "resetPassword": "Reset Password",
+  "enterEmail": "Enter your email",
+  "sendCode": "Send Code",
+  "errorEmailRequired": "Please enter your email.",
+  "statusResetSent": "Reset link sent! Check your inbox.",
+
   "tagline": "Connect with friends and the world around you.",
   "email": "Email",
   "password": "Password",

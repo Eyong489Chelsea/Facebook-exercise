@@ -4,18 +4,18 @@
     data-testid="reset-form"
   >
     <h2 class="text-xl font-bold mb-4 text-center text-black">
-      {{ $t('resetPassword.title') }}
+      {{ $t('resetPassword') }}
     </h2>
 
     <input
       v-model="email"
       type="email"
-      :placeholder="$t('resetPassword.placeholder')"
+      :placeholder="$t('enterEmail')"
       class="w-full px-4 py-2 mb-4 border border-gray-300 rounded text-black"
     />
 
     <button @click="handleReset" class="w-full bg-blue-600 text-white font-bold py-2 rounded">
-      {{ $t('resetPassword.button') }}
+      {{ $t('sendCode') }}
     </button>
 
     <p v-if="error" class="mt-4 text-sm text-red-600 text-center">
@@ -30,23 +30,25 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   setup() {
     const email = ref('')
     const status = ref('')
     const error = ref('')
+    const { t } = useI18n()
 
     const handleReset = () => {
       status.value = ''
       error.value = ''
 
       if (!email.value) {
-        error.value = 'Please enter your email.'
+        error.value = t('errorEmailRequired')
         return
       }
       console.log('Sending password reset to:', email.value)
-      status.value = 'Reset link sent! Check your inbox.'
+      status.value = t('statusResetSent')
     }
 
     return {
@@ -54,6 +56,7 @@ export default defineComponent({
       status,
       error,
       handleReset,
+      t,
     }
   },
 })

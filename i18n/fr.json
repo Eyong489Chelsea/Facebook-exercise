@@ -1,4 +1,10 @@
 {
+  "resetPassword": "Réinitialiser le mot de passe",
+  "enterEmail": "Entrez votre e-mail",
+  "sendCode": "Envoyer le code",
+  "errorEmailRequired": "Veuillez entrer votre e-mail.",
+  "statusResetSent": "Lien de réinitialisation envoyé ! Vérifiez votre boîte de réception.",
+
   "tagline": "Connectez-vous avec vos amis et le monde qui vous entoure.",
   "email": "E-mail",
   "password": "Mot de passe",
