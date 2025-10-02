@@ -47,13 +47,13 @@
             class="w-full bg-blue-600 hover:bg-blue-700"
           />
 
-          <router-link
+          <RouterLink
             data-testid="forgot-password-link"
             to="/forgot-password"
             class="block text-center text-blue-600 mt-4 text-sm hover:underline"
           >
             {{ t('forgotPassword') }}
-          </router-link>
+          </RouterLink>
 
           <hr class="my-4" />
 

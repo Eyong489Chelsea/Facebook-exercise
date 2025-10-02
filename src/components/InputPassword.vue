@@ -16,7 +16,7 @@ const onChange = (event: Event) => {
   handleChange(event, false)
 }
 const onBlur = (event: Event) => {
-  handleBlur(event, true) 
+  handleBlur(event, true)
   emit('blur')
 }
 
@@ -90,7 +90,7 @@ const togglePassword = () => {
       v-if="errorMessage"
       class="flex text-red-900 text-xs gap-1 items-center pl-2 mt-1"
       id="error-message"
-      :data-testid="`${name}_error`"
+      data-testid="password_error"
     >
       <ExclamationTriangleIcon class="size-3" />
       {{ errorMessage }}
